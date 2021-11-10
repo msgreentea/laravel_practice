@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PraController;
+use App\Http\Controllers\ConsumerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use App\Http\Controllers\PraController;
 |
 */
 
-Route::get('/', [PraController::class, 'index']);
+Route::get('/', [ConsumerController::class, 'index'])->name('home');

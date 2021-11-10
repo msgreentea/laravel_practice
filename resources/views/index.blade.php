@@ -7,10 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        @foreach ($item as $value)
-        <li>{{$value}}</li>
-        @endforeach
-    </ul>
+    <form action="/thank" method="POST">
+        @csrf
+        <label for="name">
+            氏名
+            <input type="text" name="name">
+        </label>
+        <label for="email">
+            メールアドレス
+            <input type="text" name="email">
+        </label>
+        <input type="submit" value="送信する">
+    </form>
 </body>
 </html>
