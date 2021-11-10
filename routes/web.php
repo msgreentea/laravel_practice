@@ -14,4 +14,7 @@ use App\Http\Controllers\ConsumerController;
 |
 */
 
-Route::get('/', [ConsumerController::class, 'index'])->name('home');
+// トップページ
+Route::post('/', [ConsumerController::class, 'index'])->name('home');
+// お問い合わせ完了ページ
+Route::get('/', [controller::class, 'show']);
