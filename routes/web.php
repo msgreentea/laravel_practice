@@ -15,6 +15,8 @@ use App\Http\Controllers\ConsumerController;
 */
 
 // トップページ
-Route::post('/', [ConsumerController::class, 'index'])->name('home');
+Route::get('/', [ConsumerController::class, 'index'])->name('home');
+// 入力
+Route::post('/register', [ConsumerController::class, 'register']);
 // お問い合わせ完了ページ
 Route::get('/', [controller::class, 'show']);
