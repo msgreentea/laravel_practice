@@ -9,14 +9,14 @@ class ConsumerController extends Controller
 {
     public function index()
     {
-        return view('thanks');
+        return view('index');
     }
     public function register(Request $request)
     {
         $items = Data::all();
-        return view('index');
+        return view('thanks');
     }
-    public function show(Request $request)
-    {
-    }
+    // public function show(Request $request)
+    // {
+    // }
 }
