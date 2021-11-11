@@ -7,18 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    {{-- <form action="/thank" method="POST">
-        @csrf
-        <label for="name">
-            氏名
-            <input type="text" name="name">
-        </label>
-        <label for="email">
-            メールアドレス
-            <input type="text" name="email">
-        </label>
-        <input type="submit" value="送信する">
-    </form> --}}
     <form action="/thank" method="POST">
         @csrf
         <div class="name">
